@@ -1,0 +1,30 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+
+  transform: scale(1.15);
+
+  & > * {
+    width: min(400px, 70vw) !important;
+  }
+
+  & > h2,
+  & > p,
+  & > a {
+    text-align: center;
+    margin: 10px 0;
+    color: #222;
+    font-weight: 100;
+  }
+
+  animation: appearence 0.5s;
+
+}
+
+@keyframes appearence {
+  0% {
+    opacity: 0;
+  }
+}
